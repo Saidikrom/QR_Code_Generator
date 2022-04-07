@@ -3,7 +3,7 @@ import 'package:qr_code/UI/style/style.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,12 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: homeScreen(),
     );
   }
 }
 
+// ignore: camel_case_types
 class homeScreen extends StatefulWidget {
   const homeScreen({Key? key}) : super(key: key);
 
@@ -24,6 +25,7 @@ class homeScreen extends StatefulWidget {
   State<homeScreen> createState() => _homeScreenState();
 }
 
+// ignore: camel_case_types
 class _homeScreenState extends State<homeScreen> {
   String data = '';
   @override
@@ -42,10 +44,10 @@ class _homeScreenState extends State<homeScreen> {
               size: 300,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
-          Container(
+          SizedBox(
             width: 300,
             child: TextField(
               onChanged: (value) {
@@ -54,7 +56,7 @@ class _homeScreenState extends State<homeScreen> {
                 });
               },
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
               ),
               decoration: InputDecoration(
@@ -65,18 +67,18 @@ class _homeScreenState extends State<homeScreen> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 24,
           ),
           RawMaterialButton(
             onPressed: () {},
             fillColor: AppStyle.accentColor,
-            shape: StadiumBorder(),
-            padding: EdgeInsets.symmetric(
+            shape: const StadiumBorder(),
+            padding: const EdgeInsets.symmetric(
               horizontal: 36,
               vertical: 16,
             ),
-            child: Text('Generate QR code'),
+            child: const Text('Generate QR code'),
           ),
         ],
       ),
