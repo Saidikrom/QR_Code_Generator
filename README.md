@@ -1,6 +1,6 @@
 # QR Code Generator
 
-A new Offline Flutter project.
+A new [Offline]('') Flutter project.
 
 [App link for download](https://drive.google.com/file/d/1ZM7Tv2Y6O7qBA16EjCAiEXZEEjryV6K6/view?usp=sharing)
 
